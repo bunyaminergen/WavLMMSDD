@@ -1,0 +1,12 @@
+runtime:
+  device:
+    - "cuda"
+    - "cpu"
+  cuda_alloc_conf: "expandable_segments:True"
+
+model:
+  wavlm:
+    allowed:
+      - "microsoft/wavlm-base-plus-sv"
+      - "microsoft/wavlm-base-sv"
+    selected: "microsoft/wavlm-base-plus-sv"

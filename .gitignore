@@ -1,0 +1,12 @@
+# Directories
+.idea
+.temp
+.agile
+
+__pycache__
+
+notebook/.data
+notebook/.ipynb_checkpoints
+
+build
+src/wavlmmsdd.egg-info

@@ -1,0 +1,2 @@
+# Include
+recursive-include src/wavlmmsdd/audio/config *.yaml

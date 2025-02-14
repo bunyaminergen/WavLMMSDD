@@ -1,0 +1,45 @@
+[build-system]
+
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wavlmmsdd"
+version = "0.1.0"
+description = "WavLM based diarization with MSDD"
+authors = [
+    { name = "Bunyamin Ergen", email = "info@bunyaminergen.com" }
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+keywords = ["speech", "diarization", "wavlm", "msdd"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)"
+]
+requires-python = ">=3.11"
+
+dependencies = [
+    "nemo-toolkit[asr]==2.1.0",
+    "torch==2.6.0",
+    "torchaudio==2.6.0",
+    "transformers==4.48.3",
+    "omegaconf==2.3.0",
+    "numpy==1.26.4"
+]
+
+[project.urls]
+"Source Code" = "https://github.com/bunyaminergen/wavlmmsdd"
+"Issue Tracker" = "https://github.com/bunyaminergen/wavlmmsdd/issues"
+
+[project.scripts]
+wavlmmsdd = "wavlmmsdd.main:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
