@@ -84,7 +84,7 @@ These models use Multi-Scale Diarization Decoder (MSDD) with different embedding
 > - For a detailed Jupyter notebook demonstrating how this benchmark was performed, see:  
     > [**`notebook/benchmark.ipynb`**](notebook/benchmark.ipynb)
 
-| Model                    | **DER** | **FA** | **MISS** | **CER**  | **Duration(sec)** |
+| Model                    | **DER** | **FA** | **MISS** | **tCER** | **Duration(sec)** |
 |--------------------------|---------|--------|----------|----------|-------------------|
 | **MSDD + TitaNet**       | 0.9963  | 0.0010 | 0.9946   | 0.0015   | 644               |
 | **MSDD + WavLMBasePlus** | 0.9961  | 0.0010 | 0.9946   | 0.0016   | 18                |
@@ -92,7 +92,7 @@ These models use Multi-Scale Diarization Decoder (MSDD) with different embedding
 - **DER**: *Diarization Error Rate*
 - **FA**: *False Alarm Rate*
 - **MISS**: *Missed Detection Rate*
-- **CER**: *Confusion Error Rate*
+- **tCER**: *Time-based Confusion Error Rate*
 
 ---
 
